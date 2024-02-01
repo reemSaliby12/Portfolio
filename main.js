@@ -51,24 +51,7 @@ function typeWriter() {
 typeWriter()
 // Landing
 
-// Project section
-let btn = document.querySelector('.btn');
-let cards = document.querySelectorAll('.projects .card');
-
-btn.addEventListener('click', () => {
-	if (btn.innerHTML === 'More') {
-		btn.innerHTML = 'Less';
-	} else {
-		btn.innerHTML = 'More';
-	}
-	for (let i = 6; i < cards.length; i++) {
-		cards[i].classList.toggle('show');
-	}
-});
-
-for (let i = 6; i < cards.length; i++) {
-	cards[i].style.display = 'none';
-}
+//*
 // Project section
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
